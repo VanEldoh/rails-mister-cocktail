@@ -13,17 +13,17 @@
 
 .banner {
   background-size: cover;
-  background-color: grey;
+  background-color: white;
+  border: 1px solid white;
   background-position: center;
-  padding: 150px 0;
-  margin-bottom: 15px;
+  padding: 90px 0;
 }
 
 .banner h1 {
   margin: 0;
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 32px;
+  color: black;
+  font-size: 62px;
+  font-family: Stylish;
   font-weight: bold;
   text-align: center;
 }
@@ -32,5 +32,26 @@
   font-size: 20px;
   color: white;
   opacity: .7;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.header {
+  text-align: center;
+  background-color: black;
+}
+
+.header h2{
+  font-family: Stylish;
+}
+
+.content{
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content2{
+  margin-top: 10px;
+  display:flex;
+  justify-content: center;
 }

@@ -1,9 +1,10 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4))>
+<div class="banner" style="">
   <div class="container">
-   <h1>COCKTAILS</h1>
+    <h1>COCKTAILS</h1>
+   <center> <span id="typed"></span></center>
   </div>
 </div>
-
+<div class="header"><h2>Les cocktails c'est oker</h2></div>
 <div class="cards">
 <% @cocktails.each do|cocktail| %>
   <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path cocktail.photo %>')">
@@ -13,4 +14,7 @@
 
 <% end %>
 </div>
-    <%= link_to "ADD A COCKTAIL!", new_cocktail_path  %>
+    <h4><%= link_to "ADD A COCKTAIL!", new_cocktail_path  %></h4>
+
+
+

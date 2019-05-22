@@ -1,8 +1,14 @@
 
 .cards {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
+}
+.cards h3{
+  font-family: Stylish;
 }
 
 .card-category {
@@ -27,7 +33,15 @@
     bottom: 0;
     left: 0;
     right: 0;
+    color: black;
   }
+  }
+  h4{
+  font-family: Stylish;
+}
+
+a {
+  color: black;
 }
 
 // Smallest device

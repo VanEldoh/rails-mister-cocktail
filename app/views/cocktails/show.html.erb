@@ -5,19 +5,23 @@
   </div>
 </div>
 
+<div class="content">
 <% @cocktail.doses.each do|dose| %>
 <h4><%= dose.ingredient.name %></h4>
 <p><%= dose.description %></p>
 <% end %>
 
-
 <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
 
- <%= link_to "MAKE IT GOOD!", new_cocktail_dose_path(@cocktail) %>
+<div class="content2">
+<button> <%= link_to "MAKE IT GOOD!", new_cocktail_dose_path(@cocktail) %> </button>
 
-  <p><%= link_to "delete a cocktail?", cocktail_path(@cocktail),
+  <button> <%= link_to "delete a cocktail?", cocktail_path(@cocktail),
       method: :delete,
-      data: { confirm: "Are you sure?" } %><p>
+      data: { confirm: "Are you sure?" } %> </button>
 <% if @cocktail == true %>
 <% end %>
-<%= link_to "Go back to index!", cocktails_path  %>
+<button> <%= link_to "Go back to index!", cocktails_path  %> </button>
+
+</div>
+</div>
